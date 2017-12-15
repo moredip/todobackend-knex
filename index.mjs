@@ -1,17 +1,3 @@
-import express from 'express';
-import promiseRouter from 'express-promise-router';
+import server from './src/server'
 
-import applyRoutes from './routes'
-
-// Constants
-const PORT = process.env.PORT || 3000;
-
-const router = promiseRouter();
-
-applyRoutes(router);
-
-express()
-  .use(router)
-  .listen(PORT, ()=> {
-    console.log(`Listening on port ${PORT}`);
-  });
+server(process.env.PORT || 3000);
