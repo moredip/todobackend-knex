@@ -3,7 +3,7 @@
     "node": "9.x"
   },
   "scripts": {
-    "start": "node index.js",
+    "start": "node --experimental-modules index.mjs",
     "repl": "node"
   },
   "name": "todobackend-knex",
@@ -13,6 +13,7 @@
   "author": "Pete Hodgson <git@thepete.net>",
   "license": "MIT",
   "dependencies": {
-    "express": "4.16.2"
+    "express": "4.16.2",
+    "express-promise-router": "2.0.0"
   }
 }
