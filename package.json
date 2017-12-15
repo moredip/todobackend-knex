@@ -5,7 +5,9 @@
   "scripts": {
     "start": "node --experimental-modules index.mjs",
     "dev": "nodemon --experimental-modules index.mjs",
-    "repl": "node"
+    "migrate": "knex --knexfile db/knexfile.js migrate:latest",
+    "repl": "node",
+    "knex": "knex --knexfile db/knexfile.js"
   },
   "name": "todobackend-knex",
   "version": "1.0.0",
@@ -15,7 +17,9 @@
   "license": "MIT",
   "dependencies": {
     "express": "4.16.2",
-    "express-promise-router": "2.0.0"
+    "express-promise-router": "2.0.0",
+    "knex": "0.14.2",
+    "pg": "7.4.0"
   },
   "devDependencies": {
     "nodemon": "1.12.7"
