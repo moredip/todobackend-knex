@@ -5,4 +5,4 @@ RUN curl -o- -L https://yarnpkg.com/install.sh | bash
 WORKDIR /usr/src/app
 
 ENTRYPOINT ["./docker-entrypoint.sh"]
-CMD ["start"]
+CMD ["dev"]

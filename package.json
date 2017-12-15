@@ -4,6 +4,7 @@
   },
   "scripts": {
     "start": "node --experimental-modules index.mjs",
+    "dev": "nodemon --experimental-modules index.mjs",
     "repl": "node"
   },
   "name": "todobackend-knex",
@@ -15,5 +16,8 @@
   "dependencies": {
     "express": "4.16.2",
     "express-promise-router": "2.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "1.12.7"
   }
 }

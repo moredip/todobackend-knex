@@ -1,15 +1,14 @@
 import express from 'express';
 import promiseRouter from 'express-promise-router';
 
+import applyRoutes from './routes'
+
 // Constants
 const PORT = process.env.PORT || 3000;
 
 const router = promiseRouter();
 
-router.get('/', async function(req, res){
-  res.send('Hello world\n');
-});
-
+applyRoutes(router);
 
 express()
   .use(router)
