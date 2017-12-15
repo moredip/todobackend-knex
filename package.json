@@ -1,0 +1,8 @@
+{
+  "name": "todobackend-knex",
+  "version": "1.0.0",
+  "description": "A todobackend.com implementation using modern javascript, express and knex",
+  "main": "index.js",
+  "author": "Pete Hodgson <git@thepete.net>",
+  "license": "MIT"
+}
