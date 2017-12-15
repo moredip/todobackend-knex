@@ -1,8 +1,17 @@
 {
+  "engines": {
+    "node": "9.x"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
   "name": "todobackend-knex",
   "version": "1.0.0",
   "description": "A todobackend.com implementation using modern javascript, express and knex",
   "main": "index.js",
   "author": "Pete Hodgson <git@thepete.net>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "express": "4.16.2"
+  }
 }
